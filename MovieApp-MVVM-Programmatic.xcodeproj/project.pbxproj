@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		D9803C7929D49654006D20D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803C7829D49654006D20D1 /* AppDelegate.swift */; };
 		D9803C7B29D49654006D20D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803C7A29D49654006D20D1 /* SceneDelegate.swift */; };
-		D9803C7D29D49654006D20D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803C7C29D49654006D20D1 /* ViewController.swift */; };
-		D9803C8029D49654006D20D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9803C7E29D49654006D20D1 /* Main.storyboard */; };
 		D9803C8229D4965A006D20D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9803C8129D4965A006D20D1 /* Assets.xcassets */; };
 		D9803C8529D4965A006D20D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9803C8329D4965A006D20D1 /* LaunchScreen.storyboard */; };
 		D9803C9029D4965A006D20D1 /* MovieApp_MVVM_ProgrammaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803C8F29D4965A006D20D1 /* MovieApp_MVVM_ProgrammaticTests.swift */; };
 		D9803C9A29D4965B006D20D1 /* MovieApp_MVVM_ProgrammaticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803C9929D4965B006D20D1 /* MovieApp_MVVM_ProgrammaticUITests.swift */; };
 		D9803C9C29D4965B006D20D1 /* MovieApp_MVVM_ProgrammaticUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803C9B29D4965B006D20D1 /* MovieApp_MVVM_ProgrammaticUITestsLaunchTests.swift */; };
+		D9803CAF29D49931006D20D1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9803CAE29D49931006D20D1 /* HomeVC.swift */; };
+		D9803CB729D49BA5006D20D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9803CB629D49BA5006D20D1 /* SnapKit */; };
+		D9803CBA29D49BF9006D20D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D9803CB929D49BF9006D20D1 /* Kingfisher */; };
+		D9803CBD29D49D64006D20D1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9803CBC29D49D64006D20D1 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		D9803C7529D49654006D20D1 /* MovieApp-MVVM-Programmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieApp-MVVM-Programmatic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9803C7829D49654006D20D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9803C7A29D49654006D20D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9803C7C29D49654006D20D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D9803C7F29D49654006D20D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9803C8129D4965A006D20D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9803C8429D4965A006D20D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9803C8629D4965A006D20D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,7 @@
 		D9803C9529D4965B006D20D1 /* MovieApp-MVVM-ProgrammaticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MovieApp-MVVM-ProgrammaticUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9803C9929D4965B006D20D1 /* MovieApp_MVVM_ProgrammaticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp_MVVM_ProgrammaticUITests.swift; sourceTree = "<group>"; };
 		D9803C9B29D4965B006D20D1 /* MovieApp_MVVM_ProgrammaticUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp_MVVM_ProgrammaticUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9803CAE29D49931006D20D1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9803CBD29D49D64006D20D1 /* Alamofire in Frameworks */,
+				D9803CBA29D49BF9006D20D1 /* Kingfisher in Frameworks */,
+				D9803CB729D49BA5006D20D1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +103,12 @@
 		D9803C7729D49654006D20D1 /* MovieApp-MVVM-Programmatic */ = {
 			isa = PBXGroup;
 			children = (
-				D9803C7829D49654006D20D1 /* AppDelegate.swift */,
-				D9803C7A29D49654006D20D1 /* SceneDelegate.swift */,
-				D9803C7C29D49654006D20D1 /* ViewController.swift */,
-				D9803C7E29D49654006D20D1 /* Main.storyboard */,
-				D9803C8129D4965A006D20D1 /* Assets.xcassets */,
-				D9803C8329D4965A006D20D1 /* LaunchScreen.storyboard */,
-				D9803C8629D4965A006D20D1 /* Info.plist */,
+				D9803CB329D49A8B006D20D1 /* Model */,
+				D9803CB029D49A1C006D20D1 /* Service */,
+				D9803CAD29D49771006D20D1 /* Support */,
+				D9803CAC29D49745006D20D1 /* Resources */,
+				D9803CA929D49710006D20D1 /* Scene */,
+				D9803CA829D496F2006D20D1 /* App */,
 			);
 			path = "MovieApp-MVVM-Programmatic";
 			sourceTree = "<group>";
@@ -127,6 +130,94 @@
 			path = "MovieApp-MVVM-ProgrammaticUITests";
 			sourceTree = "<group>";
 		};
+		D9803CA829D496F2006D20D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D9803C7829D49654006D20D1 /* AppDelegate.swift */,
+				D9803C7A29D49654006D20D1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D9803CA929D49710006D20D1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D9803CAB29D4972B006D20D1 /* Home */,
+				D9803CAA29D49721006D20D1 /* Detail */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		D9803CAA29D49721006D20D1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D9803CAB29D4972B006D20D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9803CB429D49AA1006D20D1 /* HomeViewModel */,
+				D9803CAE29D49931006D20D1 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D9803CAC29D49745006D20D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9803C8129D4965A006D20D1 /* Assets.xcassets */,
+				D9803C8329D4965A006D20D1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9803CAD29D49771006D20D1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D9803C8629D4965A006D20D1 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D9803CB029D49A1C006D20D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D9803CB229D49A2C006D20D1 /* ServiceManager */,
+				D9803CB129D49A25006D20D1 /* WebService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D9803CB129D49A25006D20D1 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D9803CB229D49A2C006D20D1 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		D9803CB329D49A8B006D20D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9803CB429D49AA1006D20D1 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +234,11 @@
 			dependencies = (
 			);
 			name = "MovieApp-MVVM-Programmatic";
+			packageProductDependencies = (
+				D9803CB629D49BA5006D20D1 /* SnapKit */,
+				D9803CB929D49BF9006D20D1 /* Kingfisher */,
+				D9803CBC29D49D64006D20D1 /* Alamofire */,
+			);
 			productName = "MovieApp-MVVM-Programmatic";
 			productReference = D9803C7529D49654006D20D1 /* MovieApp-MVVM-Programmatic.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +311,11 @@
 				Base,
 			);
 			mainGroup = D9803C6C29D49654006D20D1;
+			packageReferences = (
+				D9803CB529D49BA5006D20D1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D9803CB829D49BF9006D20D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D9803CBB29D49D64006D20D1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D9803C7629D49654006D20D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +334,6 @@
 			files = (
 				D9803C8529D4965A006D20D1 /* LaunchScreen.storyboard in Resources */,
 				D9803C8229D4965A006D20D1 /* Assets.xcassets in Resources */,
-				D9803C8029D49654006D20D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9803C7D29D49654006D20D1 /* ViewController.swift in Sources */,
+				D9803CAF29D49931006D20D1 /* HomeVC.swift in Sources */,
 				D9803C7929D49654006D20D1 /* AppDelegate.swift in Sources */,
 				D9803C7B29D49654006D20D1 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +397,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D9803C7E29D49654006D20D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9803C7F29D49654006D20D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D9803C8329D4965A006D20D1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,22 +531,26 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G639H868D6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MovieApp-MVVM-Programmatic/Info.plist";
+				INFOPLIST_FILE = "MovieApp-MVVM-Programmatic/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ismailtever.MovieApp-MVVM-Programmatic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,22 +563,26 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G639H868D6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MovieApp-MVVM-Programmatic/Info.plist";
+				INFOPLIST_FILE = "MovieApp-MVVM-Programmatic/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ismailtever.MovieApp-MVVM-Programmatic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -602,6 +702,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9803CB529D49BA5006D20D1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		D9803CB829D49BF9006D20D1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		D9803CBB29D49D64006D20D1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9803CB629D49BA5006D20D1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9803CB529D49BA5006D20D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D9803CB929D49BF9006D20D1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9803CB829D49BF9006D20D1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D9803CBC29D49D64006D20D1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9803CBB29D49D64006D20D1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9803C6D29D49654006D20D1 /* Project object */;
 }
