@@ -8,14 +8,18 @@
 import Foundation
 
 extension Constant {
-    
-    enum ServiceEndPoint: String {
-        
-        case BASE_URL = "https://api.themoviedb.org/3/discover/movie?"
-        case API_KEY = "api_key=59d1ea6d131e11d3a7f4921da8243138"
-        
-        static func moviesServiceEndPoint() -> String {
-           return "\(BASE_URL.rawValue)\(API_KEY.rawValue)"
+    class NetworkConstant{
+        enum SearchMovieServiceEndPoint: String {
+            case BASE_URL = "https://www.omdbapi.com"
+            case API_KEY = "apikey=be45f307"
+            
+            static func searchMovie(searchMovieName: String) -> String {
+                "\(BASE_URL.rawValue)?s=\(searchMovieName)&\(API_KEY.rawValue)"
+            }
+            
+            static func detailMovie(movieImdbId: String) -> String {
+                "\(BASE_URL.rawValue)?i=\(movieImdbId)&\(API_KEY.rawValue)"
+            }
         }
     }
 }
