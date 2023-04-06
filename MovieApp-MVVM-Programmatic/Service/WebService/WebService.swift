@@ -8,23 +8,31 @@
 import Foundation
 import Alamofire
 
-protocol ServiceProtocol {
-    
-    func fetchMovies(onSuccess: @escaping (Movies?) -> (), onError: @escaping (AFError) -> (Void) )
-
+protocol MovieServiceProtocols {
+    func searchMovie(searchMovieName: String, completion: @escaping ([Search]?) -> Void)
+    func getMovieDetail(movieImdbId: String, completion: @escaping (DetailResults?) -> Void)
 }
 
-final class Service: ServiceProtocol {
-    func fetchMovies(onSuccess: @escaping (Movies?) -> (), onError: @escaping (Alamofire.AFError) -> (Void)) {
-        ServiceManager.shared.fetch(path: Constant.ServiceEndPoint.moviesServiceEndPoint()) { (response: Movies) in
-            onSuccess(response)
-        } onError: { error in
-            onError(error)
+final class Services: MovieServiceProtocols {
+    func searchMovie(searchMovieName: String, completion: @escaping ([Search]?) -> Void) {
+        AF.request(Constant.NetworkConstant.SearchMovieServiceEndPoint.searchMovie(searchMovieName: searchMovieName)).responseDecodable(of: Result.self) { data in
+            guard let data = data.value else {
+                completion(nil)
+                return
+            }
+            completion(data.search)
         }
-
     }
     
-    
+    func getMovieDetail(movieImdbId: String, completion: @escaping (DetailResults?) -> Void) {
+        AF.request(Constant.NetworkConstant.SearchMovieServiceEndPoint.detailMovie(movieImdbId: movieImdbId)).responseDecodable(of: DetailResults.self) { data in
+            guard let data = data.value else {
+                completion(nil)
+                return
+            }
+            completion(data)
+        }
+    }
 }
 
-//protocol içinde göndeşer yazılmaz, sadece protokolün özelliği yazılır. protokolün ne yapıcağını class ya da struct içerisinde belirtiriz.
+//protocol içinde, sadece protokolün özelliği yazılır. protokolün ne yapıcağını class ya da struct içerisinde belirtiriz.
