@@ -129,6 +129,7 @@ class MovieHomeTableViewCell: UITableViewCell {
 //            }
         
         private func makeHorizontalStackView(){
+            backgroundColor = .gray
             horizontalStackView.snp.makeConstraints { make in
                 make.centerY.equalToSuperview()
                 make.left.equalTo(contentView)
@@ -136,6 +137,7 @@ class MovieHomeTableViewCell: UITableViewCell {
         }
         
         private func makeVerticalStackView(){
+            
             verticalStackView.snp.makeConstraints { make in
                 make.right.equalTo(cellRightArrow.snp.left).inset(5)
             }
