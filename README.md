@@ -3,9 +3,13 @@
 A simple two paged programmatic movie listing MVVM app.
 
 <p align="center">
-![home](https://user-images.githubusercontent.com/113910333/230898459-0c456e2a-bc7f-4762-adc9-6b0581d6c0e3.png)
-![search](https://user-images.githubusercontent.com/113910333/230898516-bccf010c-9f68-49e4-a3f3-dab82b44c8aa.png)
-![detail](https://user-images.githubusercontent.com/113910333/230898551-37429ea7-cc2e-4110-9229-dd4d8a67469f.png)
+
+<img src="https://user-images.githubusercontent.com/113910333/230904324-bed2d033-6f47-438d-9dbc-c97f98c3feb3.png" width="200" height="400">
+
+<img src="https://user-images.githubusercontent.com/113910333/230904334-a787826e-7cf2-4b3a-9c40-dc112970f842.png" width="200" height="400">
+
+<img src="https://user-images.githubusercontent.com/113910333/230904351-c64b384d-835c-40fe-a5ec-6480a22e2b49.png" width="200" height="400">
+
 </p>
 
 ## Project Tech Stack
