@@ -33,20 +33,19 @@ final class MovieHomeController: UIViewController {
     private let service = Services()
     private var search = [Search]()
     private var viewModel: MovieHomeProtocol = MovieHomeViewModel(service: Services())
-    let cellSpacingHeight: CGFloat = 5
+    
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         configure()
          viewModel.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        searchBar.searchBar.text = nil
-        searchBar.isActive = false
+        searchBarFuncs()
     }
     
     // MARK: - Functions
@@ -57,15 +56,24 @@ final class MovieHomeController: UIViewController {
         makeTableView()
     }
     
+    private func searchBarFuncs() {
+        searchBar.searchBar.text = nil
+        searchBar.isActive = false
+        searchBar.searchBar.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1.0)
+        searchBar.searchBar.layer.borderWidth = 1
+        searchBar.searchBar.layer.cornerRadius = 15.0
+    }
+    
     private func drawDesign() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(MovieHomeTableViewCell.self, forCellReuseIdentifier: MovieHomeTableViewCell.Identifier.custom.rawValue)
         tableView.rowHeight = 150
         tableView.separatorStyle = .none
-        configureNavigationBar(largeTitleColor: .systemIndigo, backgoundColor: .white, tintColor: .black, title: "Top IMDB Movies", preferredLargeTitle: false)
+        configureNavigationBar(largeTitleColor: .blue, backgoundColor: .gray, tintColor: .black, title: "Top IMDB Movies", preferredLargeTitle: false)
         navigationItem.searchController = searchBar
         searchBar.searchResultsUpdater = self
+        
         
     }
     
@@ -104,11 +112,12 @@ extension MovieHomeController: ConfigureTableView {
 
 extension MovieHomeController {
     private func makeTableView() {
+        tableView.backgroundColor = .gray
         tableView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.bottom.equalToSuperview()
-            make.left.equalToSuperview().offset(15)
-            make.right.equalToSuperview().inset(15)
+            make.left.equalToSuperview().offset(1)
+            make.right.equalToSuperview().inset(1)
             
         }
     }

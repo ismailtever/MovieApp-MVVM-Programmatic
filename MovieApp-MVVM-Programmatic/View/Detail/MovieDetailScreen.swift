@@ -27,14 +27,14 @@ class MovieDetailScreen: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.font = .boldSystemFont(ofSize: 22)
-        label.textColor = .systemIndigo
+        label.textColor = .blue
         return label
     }()
     private let genreLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
         label.font = .boldSystemFont(ofSize: 17)
-        label.textColor = .systemGray
+        label.textColor = .systemIndigo
         return label
     }()
     
@@ -75,7 +75,7 @@ class MovieDetailScreen: UIViewController {
     }
     
     func drawDesign() {
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         imageView.layer.cornerRadius = 100
     }
     
